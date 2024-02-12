@@ -1,4 +1,6 @@
 # 식단 영양소 계산 모델
+### requirments
+```!pip install --upgrade google-cloud-vision```
 ### 메인 코드 : vision_api.ipynb
 1. vision api를 사용하기 위한 인증키인 json 파일 경로 설정을 해줘야합니다.
    
