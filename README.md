@@ -1,24 +1,22 @@
-# 식단 영양소 계산 모델
-### requirments
+# Nutrient Calculation Model for Diet
+### Requirements
 ```!pip install --upgrade google-cloud-vision```
-### 메인 코드 : vision_api.ipynb
-1. vision api를 사용하기 위한 인증키인 json 파일 경로 설정을 해줘야합니다.
-   
-```os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '여기에 json 파일 경로를 입력해주세요'```
 
-2. 모델을 돌리기 위한 이미지 파일 경로 설정을 해줘야 합니다.
+### Main Code: vision_api.ipynb
+- You need to set the path for the authentication key, a json file, to use the vision API.
+```os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'Enter the path of the json file here'```
 
-```file_name = os.path.abspath('여기에 이미지 파일 경로를 입력해주세요')```
-
+- You need to set the path of the image file to run the model.
+file_name = os.path.abspath('Enter the path of the image file here')
 -----
 ### output.txt
-- vision api를 사용해서 이미지 내의 객체를 검출한 결과를 txt 파일로 저장합니다.
+- The results of detecting objects in the image using the vision API are saved as a txt file.
 -----
 ### nutrient_info.json
-- vision api에서 검출된 객체의 영양소 정보를 저장해놓은 json 파일입니다.
-- 여기서 감지된 객체 정보만을 가져와서 영양소를 계산합니다.
-
+- A json file that stores the nutrient information of the objects detected by the vision API.
+- Only the detected object information is retrieved from here to calculate the nutrients.
 ---
-# 진통 주기 계산 모델(알고리즘)
+# Labor Contraction Cycle Calculation Model (Algorithm) [No use]
 ### sufficient.ipynb
-- 진통 주기에 대한 의학적 정보를 바탕으로 진진통과 가진통을 구별하고 진통을 계산합니다.
+- Based on medical information about labor contractions, it distinguishes between false labor and true labor, and calculates the contraction cycle.
+- Please note that the codes and models are designed to work best with the specified file paths and settings. Always ensure to input the correct file path and format, and always check the output to ensure the models are running as expected.
